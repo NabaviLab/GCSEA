@@ -1,0 +1,27 @@
+seed: 42
+num_classes: 4
+num_concepts: 16
+top_m: 64
+propagation_steps: 1
+k_neighbors: 8
+spatial_tau: 0.2
+morph_tau: 1.0
+num_orientations: 4
+num_frequencies: 2
+gabor_kernel_size: 15
+proj_dim: 512
+attention_hidden: 128
+focal_gamma: 2.0
+class_weights: null
+graph_smoothness_lambda: 0.01
+learning_rate: 0.0001
+weight_decay: 0.00001
+max_epochs: 100
+patience: 12
+grad_accum_steps: 1
+max_patches_per_slide: 256
+num_workers: 0
+patch_size: 224
+train_patch_batch_size: 16
+# Coordinates must be in consistent WSI level-0 pixels; model normalizes within each slide.
+# Both image encoders must be extracted from the same raw tissue patches.
